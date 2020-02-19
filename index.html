@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HTMLレクチャー</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>のくそんの山ブログ</h1>
+      <img src="./mountain.jpg">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">トップページ</a></li>
+          <li><a href="index.html">投稿</a></li>
+          <li><a href="index.html">画像集</a></li>
+          <li><a href="index.html">外部リンク</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="contents">
+      <h2>最新の投稿</h2>
+      <article>
+        <h3 id="first-h3">北岳に行きました</h3>
+        <p>北岳は日本2位の山。めちゃくちゃ辛い。</p>
+      </article>
+      <article>
+        <h3>鋸山に行きました</h3>
+        <p>鋸山は千葉県にあるめっちゃ低い山。千葉県最高峰なのに330mしかない。</p>
+      </article>
+      <h2>個人的最高だった山ランキング</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <td>山の名前</td>
+            <td>標高</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1st</th>
+            <td>奥穂高岳</td>
+            <td>3000~</td>
+          </tr>
+          <tr>
+            <th>2nd</th>
+            <td>燕岳</td>
+            <td>2800~</td>
+          </tr>
+          <tr>
+            <th>3rd</th>
+            <td>白馬岳</td>
+            <td>2600~</td>
+          </tr>
+          <tr>
+            <th>圏外</th>
+            <td>常念岳</td>
+            <td>2600~</td>
+          </tr>
+        </tbody>
+      </table>
+      <form action="/post.cgi" method="post">
+        <h5>ユーザ名</h5>
+        <input type="text" name="username">
+        <h5>パスワード</h5>
+        <input type="password" name="password">
+        <h5>パスワードを保存する</h5>
+        <input type="radio" name="config">
+        <input type="submit" value="送信">
+      </form>
+    </div>
+    <footer>
+      <span>Copyright©️ 2020 Nocks_on All Rights Reserverd. </span>
+    </footer>
+  </body>
+</html>
